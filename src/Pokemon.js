@@ -10,7 +10,9 @@ class PokemonCard extends Component{
               <div className="pokemon--species--sprite">
                 <img src={process.env.PUBLIC_URL + `/image/${id}.png`} />
               </div>
+              <Link to={`/DetailPokemon/${id}`}>
                   <div className="pokemon--species--name"> {pokemon.name} </div>
+              </Link>
             </div>
           </div>;
     }
