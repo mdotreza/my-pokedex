@@ -2,6 +2,7 @@ html, body{
   font-family : sans-serif;
   background: #e2e1e0;
     text-align : center;
+    color: #2d2d2d;
 }
 .pokeapp{
     padding : 16px;
@@ -26,4 +27,24 @@ html, body{
     background : white;
     cursor : pointer;
  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.pokemon--species--pokename{
+    text-transform: capitalize;
+}
+.pokemon--species--pokename span{
+    margin-left: -40px;
+    font-weight: 600;
+}
+.pokemon--species--name{
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.pokemon--species--name p{
+    display: inline-block;
+    padding-right: 10px;
+}
+.backname{
+    float: left;
+    text-decoration: none;
+    color: #2d2d2d;
 }

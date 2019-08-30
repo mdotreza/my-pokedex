@@ -11,7 +11,7 @@ function Routefunc() {
             <Route path="/" exact component={Home}/>
             {/* <Route path="/Mypokemon" component={Mypokemon}/> */}
             <Route path="/Pokemon" exact component={Pokemon}/>
-            <Route path="/DetailPokemon" component={DetailPokemon}  />
+            <Route path="/DetailPokemon/:id" component={DetailPokemon}  />
           </Switch>
       </Router>
   );
@@ -20,7 +20,6 @@ const Home =()=>(
   <div>
     <h1>Pokedex</h1>
     <Pokemon/>
-    
   </div>
 )
 class App extends Component {
