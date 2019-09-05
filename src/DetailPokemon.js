@@ -41,9 +41,8 @@ export function DetailPokemon({ match }) {
                     <div className="pokemon--species--name"><b>Type</b><br/>{itemsType.map(poketype=>(<span>{poketype.type.name} </span>))}</div>
                     <div className="pokemon--species--name"><b>Ability</b><br/>{itemsTwo.map(pokemon=>(<p>{pokemon.ability.name} </p>))}</div>    
             </div>
-           <p>You clicked {counter} times</p>
             <button onClick={() => setCount(1)}>
-          Click me
+          Catch
            </button>
         </div>
         );

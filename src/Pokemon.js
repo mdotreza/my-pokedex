@@ -31,7 +31,9 @@ class Pokemon extends Component{
         loading : true
       });
       
-      fetch('http://pokeapi.co/api/v2/pokemon?limit=151').then(res=>res.json())
+      
+      fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+      .then(res =>res.json())
       .then(response=>{
         this.setState({
           species : response.results,
@@ -48,7 +50,8 @@ class Pokemon extends Component{
       if(fetched){
         content = <div className="pokemon--species--list">{species.map((pokemon,index)=> <PokemonCard key={pokemon.name} id={index+1} pokemon={pokemon}/>)}</div>;
       }else if(loading && !fetched){
-          content = <p><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></p>;
+        content = <div className="pokemon--species--list">{species.map((pokemon,index)=> <PokemonCard key={pokemon.name} id={index+1} pokemon={pokemon}/>)}</div>;
+        // content = <p><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></p>;
       }
       else{
         content = <div/>;

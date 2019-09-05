@@ -32,7 +32,6 @@ html, body{
     text-transform: capitalize;
 }
 .pokemon--species--pokename span{
-    margin-left: -40px;
     font-weight: 600;
 }
 .pokemon--species--name{
